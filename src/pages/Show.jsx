@@ -54,7 +54,7 @@ export default function Show({people, updatePerson, deletePerson}){
                     placeholder="title"
                     onChange={handleChange}
                 />
-                <button type="submit">Update Person</button>
+                <button id="delete" type="submit">Update Person</button>
             </form>
         </div>
     )

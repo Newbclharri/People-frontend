@@ -67,7 +67,7 @@ export default function Index({people, createPeople}){
                     placeholder="title"
                     onChange={handleChange}
                 />
-                <button type="submit">Create Person</button>
+                <button id="delete" type="submit">Create Person</button>
             </form>
             {people ? loaded() : loading()};
         </section>
