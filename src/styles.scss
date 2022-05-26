@@ -20,11 +20,18 @@ nav{
     justify-content: flex-start;
 }
 
-a {
+nav a {
     @include white-text-black-bg;
 
     div {
         margin: 10px;
         font-size: large;
     }
+
+    
+}
+
+
+img {
+    width: 200px;
 }
