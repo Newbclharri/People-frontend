@@ -4,6 +4,9 @@ import Index from "../pages/Index";
 import Show from "../pages/Show";
 
 export default function Main(props){
+    const [people, setPeople] = useState(null); //always assign an initial value to state variable
+    const URL = 'http://localhost:3001/people'
+
     return (
         <main>
             <Routes>
