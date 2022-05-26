@@ -3,9 +3,9 @@ import { useState } from "react";
 
 
 export default function Show({people, updatePerson, deletePerson}){
-
+    
     const {id} = useParams();
-
+    
     const person = people.find(person => person._id === id); //fiter people array for a person object that contains a _id value == to id from params
     //the returned, filtered object is assigned to the parameter /variable person as seen in the JSX below
 
@@ -22,7 +22,7 @@ export default function Show({people, updatePerson, deletePerson}){
 
     const handleSubmit = e => {
         e.preventDefault();
-        updatePerson(editForm, person._id);
+        updatePerson(editForm, id);
         //redirect user back to index
         navigate("/")
     }
