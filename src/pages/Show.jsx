@@ -32,6 +32,9 @@ export default function Show({people, updatePerson, deletePerson}){
             <h1>{person.name}</h1>
             <h2>{person.title}</h2>
             <img src={person.image} alt={person.name} />
+            <button id="delete" onClick={deletePerson}>
+                Delete
+            </button>
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
